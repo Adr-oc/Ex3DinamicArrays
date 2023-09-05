@@ -12,17 +12,29 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * The type Taller mecanico controller.
+ */
 public class TallerMecanicoController {
     private TallerMecanicoModel modelo;
     private TallerMecanicoView vista;
     private Scanner scanner;
 
+    /**
+     * Instantiates a new Taller mecanico controller.
+     *
+     * @param modelo the modelo
+     * @param vista  the vista
+     */
     public TallerMecanicoController(TallerMecanicoModel modelo, TallerMecanicoView vista) {
         this.modelo = modelo;
         this.vista = vista;
         this.scanner = new Scanner(System.in);
     }
 
+    /**
+     * Iniciar.
+     */
     public void iniciar() {
         int opcion;
         do {
@@ -146,6 +158,11 @@ public class TallerMecanicoController {
     }
 
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         TallerMecanicoModel modelo = new TallerMecanicoModel();
         TallerMecanicoView vista = new TallerMecanicoView();
